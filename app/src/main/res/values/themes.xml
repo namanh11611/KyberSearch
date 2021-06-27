@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.KyberSearch" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/colorWhite</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <!-- Ignore system night mode. -->
+        <item name="android:forceDarkAllowed" tools:targetApi="r">false</item>
+    </style>
+
+    <style name="LightTheme" parent="Theme.KyberSearch">
+        <item name="colorBackground">@color/colorBackgroundLight</item>
+        <item name="colorBackgroundSecond">@color/colorBackgroundSecondLight</item>
+        <item name="colorBackgroundThird">@color/colorBackgroundThirdLight</item>
+        <item name="colorTextPrimary">@color/colorTextPrimary</item>
+        <item name="colorTextSecondary">@color/colorTextSecondary</item>
+        <item name="colorButton">@color/colorPrimary</item>
+        <item name="autoCompleteTextViewStyle">@style/SearchAutoCompleteTextView</item>
+    </style>
+
+    <style name="DarkTheme" parent="Theme.KyberSearch">
+        <item name="colorBackground">@color/colorBackgroundDark</item>
+        <item name="colorBackgroundSecond">@color/colorBackgroundSecondDark</item>
+        <item name="colorBackgroundThird">@color/colorBackgroundThirdDark</item>
+        <item name="colorTextPrimary">@color/colorTextPrimaryDark</item>
+        <item name="colorTextSecondary">@color/colorTextSecondaryDark</item>
+        <item name="colorButton">@color/colorPrimary</item>
+        <item name="autoCompleteTextViewStyle">@style/SearchAutoCompleteTextView</item>
+    </style>
+
+    <style name="SearchAutoCompleteTextView" parent="Widget.AppCompat.Light.AutoCompleteTextView">
+        <item name="android:textColor">?attr/colorTextPrimary</item>
+        <item name="android:textColorHint">?attr/colorTextSecondary</item>
+    </style>
+
+</resources>

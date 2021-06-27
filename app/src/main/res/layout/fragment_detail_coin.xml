@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorBackground"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingVertical="@dimen/item_padding_vertical"
+    tools:context=".view.detail.DetailCoinFragment">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="@dimen/item_image_size"
+        android:layout_height="@dimen/item_image_size" />
+
+    <TextView
+        android:id="@+id/txt_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_text_symbol_margin"
+        android:textColor="?attr/colorTextPrimary"
+        android:textSize="@dimen/item_text_symbol_size" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_text_name_margin"
+        android:textColor="?attr/colorTextSecondary"
+        android:textSize="@dimen/item_text_name_size" />
+
+</LinearLayout>

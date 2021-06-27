@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorBackground"
+    android:orientation="vertical"
+    tools:context=".view.search.SearchFragment">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/item_padding_horizontal"
+        android:layout_marginTop="@dimen/item_padding_horizontal"
+        android:background="@drawable/bg_symbol_simple" />
+
+    <TextView
+        android:id="@+id/txt_invalid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/item_padding_horizontal"
+        android:layout_marginTop="@dimen/item_text_name_margin"
+        android:text="@string/invalid_text"
+        android:textColor="?attr/colorButton"
+        android:textSize="@dimen/item_text_name_size"
+        android:visibility="invisible" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/item_padding_horizontal"
+                android:layout_marginTop="@dimen/item_padding_horizontal"
+                android:text="@string/recent_search"
+                android:textColor="?attr/colorTextPrimary"
+                android:textSize="@dimen/item_text_symbol_size" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list_coin_recent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_padding_vertical"
+                android:background="?attr/colorBackground"
+                android:clipToPadding="false"
+                android:paddingVertical="@dimen/item_padding_vertical"
+                android:paddingStart="@dimen/item_padding_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/item_padding_horizontal"
+                android:layout_marginTop="@dimen/item_padding_horizontal"
+                android:text="@string/suggestion"
+                android:textColor="?attr/colorTextPrimary"
+                android:textSize="@dimen/item_text_symbol_size" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list_coin_suggestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_padding_vertical"
+                android:background="?attr/colorBackground"
+                android:clipToPadding="false"
+                android:paddingVertical="@dimen/item_padding_vertical"
+                android:paddingStart="@dimen/item_padding_horizontal" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list_coin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/item_padding_horizontal"
+                android:background="?attr/colorBackground"
+                android:clipToPadding="false"
+                android:paddingVertical="@dimen/item_padding_vertical"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/txt_no_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/item_padding_vertical"
+        android:fontFamily="@font/roboto"
+        android:text="@string/please_check_internet_connect"
+        android:textColor="?attr/colorTextPrimary"
+        android:textSize="@dimen/item_text_symbol_size"
+        android:visibility="gone" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt_reconnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_padding_vertical"
+        android:fontFamily="@font/roboto"
+        android:text="@string/button_reconnect"
+        android:textAllCaps="false"
+        android:visibility="gone" />
+
+</LinearLayout>

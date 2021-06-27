@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_height">70dp</dimen>
+    <dimen name="item_padding_vertical">10dp</dimen>
+    <dimen name="item_padding_horizontal">20dp</dimen>
+    <dimen name="item_radius">10dp</dimen>
+    <dimen name="item_elevation">5dp</dimen>
+    <dimen name="item_image_size">30dp</dimen>
+    <dimen name="item_image_radius">5dp</dimen>
+    <dimen name="item_text_symbol_size">14sp</dimen>
+    <dimen name="item_text_symbol_margin">10dp</dimen>
+    <dimen name="item_text_name_size">12sp</dimen>
+    <dimen name="item_text_name_margin">5dp</dimen>
+</resources>

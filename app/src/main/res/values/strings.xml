@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">KyberSearch</string>
+
+    <string name="please_check_internet_connect">Vui lòng kiểm tra lại kết nối Internet của bạn!</string>
+    <string name="notification_no_connect">Không tìm thấy kết nối Internet!</string>
+    <string name="button_reconnect">Tải lại</string>
+
+    <string name="invalid_text">Invalid character. Please re-enter.</string>
+
+    <string name="recent_search">Recent Search</string>
+    <string name="suggestion">Suggestion</string>
+</resources>
